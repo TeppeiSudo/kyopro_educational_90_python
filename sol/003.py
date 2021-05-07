@@ -39,9 +39,7 @@ for i in range(1, N+1):
 #  Step #3. 頂点 maxid1 からの最短距離を求める
 #  maxn2: 木の直径（最短距離の最大値）
 dist2 = getdist(maxid1)
-maxn2 = -1
-for i in range(1, N+1):
-    maxn2 = max(maxn2, dist2[i])
+maxn2 = max(dist2)
 
 #  Step #4. 出力
 print(maxn2+1)
